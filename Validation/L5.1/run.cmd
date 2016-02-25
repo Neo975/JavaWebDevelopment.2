@@ -1,0 +1,1 @@
+java -Dlog4j.configurationFile=file:cfg/log4j2.xml -jar server.jar 8080

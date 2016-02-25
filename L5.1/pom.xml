@@ -40,7 +40,7 @@
                     <appendAssemblyId>false</appendAssemblyId>
                     <archive>
                         <manifest>
-                            <mainClass>com.Makurov.Main</mainClass>
+                            <mainClass>example.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
