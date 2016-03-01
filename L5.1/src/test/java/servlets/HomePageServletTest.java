@@ -44,12 +44,13 @@ public class HomePageServletTest {
         final StringWriter stringWriter = new StringWriter();
         HttpServletResponse response = getMockedResponse(stringWriter);
         HttpServletRequest request = getMockedRequest(HomePageServlet.PAGE_URL);
-        when(request.getParameter("remove")).thenReturn("");
+        when(request.getParameter("remove")).thenReturn("Some string");
 
         HomePageServlet homePage = new HomePageServlet(accountServer);
         homePage.doGet(request, response);
 
         assertEquals("Hasta la vista!", stringWriter.toString().trim());
         verify(accountServer, times(1)).removeUser();
+        verify(accountServer, atMost(3)).removeUser();
     }
 }

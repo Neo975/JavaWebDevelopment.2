@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/L0.ReferenceTypes/L0.ReferenceTypes.iml" filepath="$PROJECT_DIR$/L0.ReferenceTypes/L0.ReferenceTypes.iml" />
       <module fileurl="file://$PROJECT_DIR$/L5.1/L5.1.iml" filepath="$PROJECT_DIR$/L5.1/L5.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L6.2.IO/L6.2.IO.iml" filepath="$PROJECT_DIR$/L6.2.IO/L6.2.IO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L6.3.SaxParser/L6.3.SaxParser.iml" filepath="$PROJECT_DIR$/L6.3.SaxParser/L6.3.SaxParser.iml" />
     </modules>
   </component>
 </project>
