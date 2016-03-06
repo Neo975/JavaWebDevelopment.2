@@ -7,6 +7,16 @@ import java.util.concurrent.Semaphore;
  */
 public class Main {
     public static void main(String[] args) throws InterruptedException {
+//        testMyThread();
+        testVolatile();
+    }
+
+    private static void testVolatile() {
+        new VolatileTest.ChangeListener().start();
+        new VolatileTest.ChangeMaker().start();
+    }
+
+    private static void testMyThread() {
         Thread t0 = new MyThread(0);
         Thread t1 = new MyThread(1);
         Thread t2 = new MyThread(2);
