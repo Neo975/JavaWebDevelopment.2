@@ -1,0 +1,4 @@
+[03-05 20:31:53,859, 376] example.Main Starting at http://127.0.0.1:8080
+[03-05 20:31:53,978, 495] example.Main Server started
+[03-05 20:31:54,283, 800] ResourcePageServlet ResourcePageServlet.doPost(), entry point
+[03-05 20:31:54,285, 802] ResourcePageServlet ResourcePageServlet.doPost(), POST parameter path: resource.xml

@@ -1,0 +1,3 @@
+#Команды для утилиты CURL
+
+curl --request POST "http://127.0.0.1/resources" --data "path=./data/resource.xml"

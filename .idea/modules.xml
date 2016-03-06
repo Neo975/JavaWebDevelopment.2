@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/L5.1/L5.1.iml" filepath="$PROJECT_DIR$/L5.1/L5.1.iml" />
       <module fileurl="file://$PROJECT_DIR$/L6.2.IO/L6.2.IO.iml" filepath="$PROJECT_DIR$/L6.2.IO/L6.2.IO.iml" />
       <module fileurl="file://$PROJECT_DIR$/L6.3.SaxParser/L6.3.SaxParser.iml" filepath="$PROJECT_DIR$/L6.3.SaxParser/L6.3.SaxParser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L6.4.NIO/L6.4.NIO.iml" filepath="$PROJECT_DIR$/L6.4.NIO/L6.4.NIO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L6.5/L6.5.iml" filepath="$PROJECT_DIR$/L6.5/L6.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L6.6.Threads/L6.6.Threads.iml" filepath="$PROJECT_DIR$/L6.6.Threads/L6.6.Threads.iml" />
     </modules>
   </component>
 </project>
