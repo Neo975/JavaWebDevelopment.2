@@ -1,3 +1,5 @@
+import DeadLock.A;
+import DeadLock.DeadLockTester;
 import LockTest.*;
 
 /**
@@ -7,7 +9,17 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
 //        testMyThread();
 //        testVolatile();
-        testSynchro();
+//        testSynchro();
+        testDeadlock();
+    }
+
+    private static void testDeadlock() {
+        A a1 = new A();
+        A a2 = new A();
+        Thread t1 = new Thread(new DeadLockTester(a1, a2));
+        Thread t2 = new Thread(new DeadLockTester(a2, a1));
+        t1.start();
+        t2.start();
     }
 
     private static void testSynchro() {
