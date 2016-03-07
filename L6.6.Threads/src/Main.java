@@ -1,6 +1,4 @@
-import sun.awt.Mutex;
-
-import java.util.concurrent.Semaphore;
+import LockTest.*;
 
 /**
  * Created by Mike on 06.03.2016.
@@ -8,7 +6,16 @@ import java.util.concurrent.Semaphore;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
 //        testMyThread();
-        testVolatile();
+//        testVolatile();
+        testSynchro();
+    }
+
+    private static void testSynchro() {
+        LockTest l = new LockTest();
+        IncrementThread incrementThread = new IncrementThread(l);
+        DecrementThread decrementThread = new DecrementThread(l);
+        incrementThread.start();
+        decrementThread.start();
     }
 
     private static void testVolatile() {
