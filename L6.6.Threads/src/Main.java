@@ -1,6 +1,6 @@
-import sun.awt.Mutex;
-
-import java.util.concurrent.Semaphore;
+import DeadLock.A;
+import DeadLock.DeadLockTester;
+import LockTest.*;
 
 /**
  * Created by Mike on 06.03.2016.
@@ -8,7 +8,26 @@ import java.util.concurrent.Semaphore;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
 //        testMyThread();
-        testVolatile();
+//        testVolatile();
+//        testSynchro();
+        testDeadlock();
+    }
+
+    private static void testDeadlock() {
+        A a1 = new A();
+        A a2 = new A();
+        Thread t1 = new Thread(new DeadLockTester(a1, a2));
+        Thread t2 = new Thread(new DeadLockTester(a2, a1));
+        t1.start();
+        t2.start();
+    }
+
+    private static void testSynchro() {
+        LockTest l = new LockTest();
+        IncrementThread incrementThread = new IncrementThread(l);
+        DecrementThread decrementThread = new DecrementThread(l);
+        incrementThread.start();
+        decrementThread.start();
     }
 
     private static void testVolatile() {
