@@ -7,6 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class Main {
     private static final int HUNDRED_MILLION = 100_000_000;
+//    private static final int HUNDRED_MILLION = 10;
     private static final int THREADS_NUMBER = 2;
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
@@ -43,7 +44,7 @@ public class Main {
 
         @Override
         public Integer call() throws Exception {
-            while(realCountNumber.incrementAndGet() < HUNDRED_MILLION) {
+            while(realCountNumber.getAndIncrement() < HUNDRED_MILLION) {
                 counter.increment();
             }
             return counter.getCount();
