@@ -6,11 +6,20 @@ import LockTest.*;
  * Created by Mike on 06.03.2016.
  */
 public class Main {
+    private static final int THREADS_NUMBER = 1000;
+
     public static void main(String[] args) throws InterruptedException {
 //        testMyThread();
 //        testVolatile();
 //        testSynchro();
-        testDeadlock();
+//        testDeadlock();
+        testResourceLoad();
+    }
+
+    private static void testResourceLoad() {
+        for (int i = 0; i < THREADS_NUMBER; i++) {
+            (new HeavyThread()).start();
+        }
     }
 
     private static void testDeadlock() {
