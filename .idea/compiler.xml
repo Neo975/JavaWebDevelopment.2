@@ -32,11 +32,18 @@
         <processorPath useClasspath="true" />
         <module name="L6.5" />
       </profile>
+      <profile default="false" name="Annotation profile for L7.3.Final" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="L7.3.Final" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="L5.1" target="1.8" />
       <module name="L6.5" target="1.8" />
+      <module name="L7.3.Final" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
-

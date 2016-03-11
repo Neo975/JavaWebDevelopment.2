@@ -9,6 +9,7 @@
       <list>
         <option value="$PROJECT_DIR$/L5.1/pom.xml" />
         <option value="$PROJECT_DIR$/L6.5/pom.xml" />
+        <option value="$PROJECT_DIR$/L7.3.Final/pom.xml" />
       </list>
     </option>
   </component>
@@ -26,4 +27,3 @@
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
-
