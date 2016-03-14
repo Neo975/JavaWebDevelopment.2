@@ -1,5 +1,5 @@
-[02-25 15:15:54,654, 334] example.Main Starting at http://127.0.0.1:8080
-[02-25 15:15:54,796, 476] example.Main Server started
+[02-25 15:15:54,654, 334] example.MainFinal Starting at http://127.0.0.1:8080
+[02-25 15:15:54,796, 476] example.MainFinal Server started
 [02-25 15:17:10,511, 76191] servlets.HomePageServlet Limit: 15. Count: 0
 [02-25 15:17:10,511, 76191] servlets.HomePageServlet User pass
 [02-25 15:17:27,540, 93220] servlets.HomePageServlet Limit: 15. Count: 1

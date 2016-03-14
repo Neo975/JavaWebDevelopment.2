@@ -39,11 +39,19 @@
         <processorPath useClasspath="true" />
         <module name="L7.3.Final" />
       </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="L7.3.FinalNIO" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="L5.1" target="1.8" />
       <module name="L6.5" target="1.8" />
       <module name="L7.3.Final" target="1.8" />
+      <module name="L7.3.FinalNIO" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,5 +1,5 @@
-[03-05 20:18:26,474, 364] example.Main Starting at http://127.0.0.1:8080
-[03-05 20:18:26,614, 504] example.Main Server started
+[03-05 20:18:26,474, 364] example.MainFinal Starting at http://127.0.0.1:8080
+[03-05 20:18:26,614, 504] example.MainFinal Server started
 [03-05 20:18:30,293, 4183] ResourcePageServlet ResourcePageServlet.doPost(), entry point
 [03-05 20:18:30,296, 4186] ResourcePageServlet ResourcePageServlet.doPost(), POST parameter path: resource.xml
 [03-05 20:19:34,606, 68496] ResourcePageServlet ResourcePageServlet.doPost(), entry point
